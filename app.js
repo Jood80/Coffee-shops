@@ -78,7 +78,7 @@ db.collection("cafes")
 
  db.collection('cafes').doc(editedChoice).update({name:'Mario World'})
 
- //set whill overwrite all doc so we have to provide it with all it needs- this will update name property as well
+ //.set() will overwrite the whole doc so we have to provide it with all it needs- this will update name property as well
  db.collection('cafes').doc(updatedChoice).set({city:'Liverpool'})
 
 
